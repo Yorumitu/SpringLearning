@@ -1,3 +1,11 @@
 # SpringLearning
 - 根据b站视频进行Spring功能的复现学习
 - 视频地址：www.bilibili.com/video/BV1AM4y1c79v
+- 视频手写部分只有
+  - 手写Spring启动以及扫描流程
+  - 手写getBean()流程
+  - 手写Bean生命周期流程
+  - 手写依赖注入流程
+  - 手写BeanPostProcess机制
+  - 手写AOP机制
+- 剩下部分择日再补
