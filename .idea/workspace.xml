@@ -5,27 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7b48bc7-a7d2-46d5-a2d0-f7b347e6706e" name="Changes" comment="SpringLearning">
-      <changelist_data name="cRam_" email="" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/Autowired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/BeanDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/BeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/ComponentScan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/InitializingBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/ramApplicationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/ramBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/AOP/Aspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/AOP/Before.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/AOP/EnableAspectJAutoProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/Bean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/JointPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/PostConstruct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/aspect/ramAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/spring/ramApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/ramApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/test/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/test/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/UserService.java" afterDir="false" />
     </list>
     <list id="1dfc03b2-5d75-4a2d-884e-489e134d08d0" name="Spring day1" comment=" Spring扫描、依赖注入、初始化机制、后置处理器、&#10; AOP底层流程" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -82,6 +74,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/java/projects/Test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,8 +120,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680777014959</updated>
-      <workItem from="1680777016608" duration="14512000" />
+      <workItem from="1680777016608" duration="15169000" />
+      <workItem from="1680829281332" duration="13375000" />
     </task>
+    <task id="LOCAL-00001" summary="SpringLearning">
+      <created>1680791636183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680791636183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +181,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="SpringLearning/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

@@ -3,6 +3,7 @@ package com.learning.spring;
 import java.io.File;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +23,8 @@ public class ramApplicationContext {
 
     private List<BeanPostProcessor> beanPostProcessorList = new ArrayList<>();
 
-    public ramApplicationContext(Class configClass) {
+    //补充另一种使用Spring的方式...
+    public ramApplicationContext(Class configClass) { //配置类
         this.configClass = configClass;
 
         scan(configClass); //找到beanDefinition对象并放到Map里
@@ -50,16 +52,17 @@ public class ramApplicationContext {
 
             Class clazz = beanDefinition.getClazz();
 
+            // 实例化前处理器在这个位置工作
             // 实例化前————>对象
             // return 对象;
             // 则后续操作都不会执行，直接返回你返回的对象当作最终的bean对象
 
-            Object instance  = clazz.newInstance();
+            Object instance  = clazz.newInstance();  //通过Class类的newInstance()方法创建对象（相当于使用无参构造方法）
 
             // 依赖注入（属性赋值），对象的注入
             // 对方法：把方法全找出来，看哪些加了Autowired注解，拿到这些方法所有的参数，也是调用getBean()，通过反射的方式
             // 首先得找到属性，给加了Autowired注解的属性赋值
-            for (Field field : clazz.getDeclaredFields()) {
+            for (Field field : clazz.getDeclaredFields()) { //.getDeclaredFields()获取某个类的所有声明的字段，即包括public 、private和protected
                 if (field.isAnnotationPresent(Autowired.class)) {
                     // 用反射赋值
                     // 找一个值出来赋给属性
@@ -73,6 +76,13 @@ public class ramApplicationContext {
                     field.set(instance, bean);
                 }
             }
+            //检测@PostConstruct，初始化前执行a()方法
+            for (Method method : clazz.getDeclaredMethods()) {
+                if (method.isAnnotationPresent(PostConstruct.class)) {
+                    method.invoke(instance, null);
+                }
+            }
+
 
             for (BeanPostProcessor beanPostProcessor : beanPostProcessorList) {
                 instance = beanPostProcessor.postProcessBeforeInitialization(instance, beanName);
