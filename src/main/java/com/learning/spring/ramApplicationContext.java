@@ -57,7 +57,7 @@ public class ramApplicationContext {
             // return 对象;
             // 则后续操作都不会执行，直接返回你返回的对象当作最终的bean对象
 
-            Object instance  = clazz.newInstance();  //通过Class类的newInstance()方法创建对象（相当于使用无参构造方法）
+            Object instance  = clazz.newInstance();  //通过Class类的newInstance()方法创建对象（相当于使用无参构造方法）——————>原始对象
 
             // 依赖注入（属性赋值），对象的注入
             // 对方法：把方法全找出来，看哪些加了Autowired注解，拿到这些方法所有的参数，也是调用getBean()，通过反射的方式
@@ -69,7 +69,7 @@ public class ramApplicationContext {
                     String name = field.getName();
                     Object bean = getBean(name);//原Spring的getBean方法可以传入更多类型得到对象，在此只实现了通过beanName获取对象
 
-                    if (bean == null ) { //并且required == true时 会报错
+                    if (bean == null ) { //并且@require == true时 会报错,因为此时注入对象是必要的。默认为true
                     }
 
                     field.setAccessible(true);

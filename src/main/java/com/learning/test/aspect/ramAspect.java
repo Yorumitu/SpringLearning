@@ -4,7 +4,7 @@ package com.learning.test.aspect;
 import com.learning.spring.AOP.Aspect;
 import com.learning.spring.AOP.Before;
 import com.learning.spring.Component;
-import com.learning.spring.JointPoint;
+import com.learning.spring.AOP.JointPoint;
 
 @Aspect
 @Component

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7b48bc7-a7d2-46d5-a2d0-f7b347e6706e" name="Changes" comment="SpringLearning">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/spring/JointPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/AOP/JointPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/spring/ramApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/spring/ramApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/learning/test/aspect/ramAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/learning/test/aspect/ramAspect.java" afterDir="false" />
     </list>
     <list id="1dfc03b2-5d75-4a2d-884e-489e134d08d0" name="Spring day1" comment=" Spring扫描、依赖注入、初始化机制、后置处理器、&#10; AOP底层流程" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680777014959</updated>
       <workItem from="1680777016608" duration="15169000" />
-      <workItem from="1680829281332" duration="13607000" />
+      <workItem from="1680829281332" duration="27012000" />
     </task>
     <task id="LOCAL-00001" summary="SpringLearning">
       <created>1680791636183</created>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680888430770</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="SpringLearning">
+      <created>1680888663214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680888663214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
